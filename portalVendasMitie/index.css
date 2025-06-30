@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0d4e2; /* Fundo rosado */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #d63384;
+    font-size: 2rem;
+  }
+  
+  .banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f8bbd0; */
+    /* padding: 10px; */
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* FORMULÁRIO */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  input,
+  select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #d63384;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #d63384;
+    border: 1px solid #d63384;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 600px) {
+    .container {
+      padding: 16px;
+      margin: 20px 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .banner {
+      height: 120px;
+    }
+
+    .banner-img {
+        max-height: 80px;
+    }
+  
+    input,
+    select,
+    button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  

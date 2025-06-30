@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal de Vendas Mitie</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+</head>
+<body>
+  <div class="container">
+    <h1>Portal de Vendas Mitie</h1>
+
+    <div class="banner">
+        <img src="./images/banner.png" alt="Banner com Logo" class="banner-img" />
+      </div>      
+
+    <form id="formulario">
+      <!-- Campo de data no topo -->
+      <input type="hidden" name="Criado em" value="x-sheetmonkey-current-date-time" />
+      <input type="hidden" name="x-sheetmonkey-insert-data-top" value="1" />
+
+      <label for="nomeCliente">Nome do Cliente:</label>
+      <input type="text" id="nomeCliente" name="Nome do Cliente" required />
+
+      <label for="idProduto">Id do Produto:</label>
+      <input type="text" id="idProduto" name="Id do Produto" required />
+
+      <label for="nomeProduto">Nome do Produto:</label>
+      <input type="text" id="nomeProduto" name="Nome do Produto" required />
+
+      <label for="valorTotal">Valor Total:</label>
+      <input type="text" id="valorTotal" name="Valor Total" required />
+
+      <label for="formaPagamento">Forma de Pagamento:</label>
+      <select id="formaPagamento" name="Forma de Pagamento">
+        <option value="Crédito">Crédito</option>
+        <option value="Pix">Pix</option>
+      </select>
+
+      <label for="qtdVezes">Quantidade de Vezes:</label>
+      <select id="qtdVezes" name="Quantidade de Vezes">
+        <option value="1x">1x</option>
+        <option value="2x">2x</option>
+      </select>
+
+      <div id="campoEntrada" class="hidden">
+        <label for="valorEntrada">Valor de Entrada:</label>
+        <input type="text" id="valorEntrada" name="Valor de Entrada" />
+      </div>
+
+      <button type="submit">Confirmar</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
